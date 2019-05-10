@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.1
 
 ENV SONAR_SCANNER_MSBUILD_VERSION 4.6.1.2049
 # Install Java 8
-RUN apt-get update && #apt-get install -y openjdk-8-jre
+RUN apt-get update && apt-get install -y openjdk-8-jre
 
 # Install libgdiplus
 RUN apt-get update \
