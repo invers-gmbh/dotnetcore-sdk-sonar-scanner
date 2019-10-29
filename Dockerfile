@@ -7,8 +7,8 @@ RUN apt-get install --yes default-jdk
 RUN java -version
 
 # Trying to fix sonarscanner problems
-RUN export DOTNET_ROLL_FORWARD=Major 
-RUN export PATH="$PATH:/root/.dotnet/tools"
+ENV DOTNET_ROLL_FORWARD=Major 
+ENV PATH="$PATH:/root/.dotnet/tools"
 
 # Install dotnet-sconarscanner
 RUN dotnet tool install --global dotnet-sonarscanner
