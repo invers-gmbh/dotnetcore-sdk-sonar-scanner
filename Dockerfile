@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0
 
-ENV SONAR_SCANNER_MSBUILD_VERSION 4.6.1.2049
+ENV SONAR_SCANNER_MSBUILD_VERSION 4.7.1.2311
 # Install Java 8
 RUN apt-get update && apt-get install -y openjdk-8-jre
 
