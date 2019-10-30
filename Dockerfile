@@ -11,7 +11,8 @@ ENV DOTNET_ROLL_FORWARD=Major
 ENV PATH="$PATH:/root/.dotnet/tools"
 
 # Install dotnet-sconarscanner
-RUN dotnet tool install --global dotnet-sonarscanner
+RUN dotnet tool install -g dotnet-sonarscanner
+RUN dotnet tool install -g dotnet-reportgenerator-globaltool
 
 # Install libgdiplus
 RUN apt-get install -y libgdiplus libc6-dev \
