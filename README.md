@@ -1,8 +1,14 @@
-# dotnetcore-sdk-sonar-scanner
+# Supported tags and respective `Dockerfile` links
 
-Dockerimage with .net core sdk and sonar scanner
+- [`latest` -> .net Core SDK 2.1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/master/Dockerfile)
+- [`dotnet-2.2` -> .net Core SDK 2.2](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-2.2/Dockerfile)
+- [`dotnet-3.0` -> .net Core SDK 3.0](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.0/Dockerfile)
 
-# Usage
+# What's this image about?
+
+Dockerimage with .net Core SDK and [SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/) used for CI/CD pipelines.
+
+# Example usage
 
 ## Bitbucket Pipeline
 
