@@ -12,6 +12,12 @@ Dockerimage with .net Core SDK and [SonarScanner](https://docs.sonarqube.org/lat
 
 ## Bitbucket Pipeline
 
+### Repository Variables
+- SONAR_URL (Base URL of your SonarQube, for SonarCloud use `https://sonarcloud.io`)
+- SONAR_TOKEN (Token generated in SonarQube)
+- SOLUTION_FILE (complete path to sln file, e.g. `/my-project/my_project.sln`)
+
+### `bitbucket-pipelines.yml`
 ```
 image: inverscom/dotnetcore-sdk-sonar-scanner:dotnet-3.0
 
