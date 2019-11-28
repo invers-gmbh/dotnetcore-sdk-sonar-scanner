@@ -5,6 +5,8 @@ Dockerimage with .net core sdk and sonar scanner
 # Usage
 
 ## Bitbucket Pipeline
+
+```
 image: inverscom/dotnetcore-sdk-sonar-scanner:dotnet-3.0
 
 definitions:
@@ -30,3 +32,4 @@ pipelines:
             - dotnet sonarscanner begin /d:sonar.host.url=$SONAR_URL /d:sonar.login=$SONAR_TOKEN /key:$SONAR_KEY /d:sonar.coverageReportPaths="results/coverage/SonarQube.xml" /d:sonar.exclusions="**/Migrations/*,Server/Views/**/*,**/wwwroot/**/*"
             - dotnet build $PROJECT_NAME
             - dotnet sonarscanner end /d:sonar.login=$SONAR_TOKEN
+```
