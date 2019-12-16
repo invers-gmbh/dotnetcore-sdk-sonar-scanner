@@ -37,7 +37,7 @@ pipelines:
           caches:
             - dotnetcore
           script:
-            - export DOTNET_ROLL_FORWARD=Major 
+            - export DOTNET_ROLL_FORWARD=Major
             - export PATH="$PATH:/root/.dotnet/tools"
             - export PROJECT_NAME=$SOLUTION_FILE
             - dotnet test --collect:"XPlat Code Coverage" "/p:CollectCoverage=true"
