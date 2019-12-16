@@ -20,7 +20,7 @@ Dockerimage with .net Core SDK and [SonarScanner](https://docs.sonarqube.org/lat
 
 ### `bitbucket-pipelines.yml`
 ```
-image: inverscom/dotnetcore-sdk-sonar-scanner:dotnet-3.0
+image: inverscom/dotnetcore-sdk-sonar-scanner:latest
 
 definitions:
   services:
