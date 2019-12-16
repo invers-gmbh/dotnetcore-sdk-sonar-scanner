@@ -29,7 +29,7 @@ definitions:
 
 pipelines:
   branches:
-    "{dev,master}":
+    "{dev,master}": 
       - step:
           name: Quality analysis to Sonarqube
           services:
