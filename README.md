@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-- [`dotnet-3.1` -> .net Core SDK 3.1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.1/Dockerfile)
+- [`latest` -> .net Core SDK 3.1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.1/Dockerfile)
 - [`dotnet-2.2` -> .net Core SDK 2.2](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-2.2/Dockerfile)
 - [`dotnet-3.0` -> .net Core SDK 3.0](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.0/Dockerfile)
 
