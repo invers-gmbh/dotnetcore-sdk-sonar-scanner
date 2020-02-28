@@ -8,11 +8,10 @@ RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor 
     && chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg \
     && chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
-# Install apt-transport-https, dotnet-sdk-2.2, dotnet-sdk-2.1, Java
+# Install apt-transport-https, dotnet-sdk-2.1, Java
 RUN apt-get update \
     && apt-get install apt-transport-https \
     && apt-get update \
-    && apt-get install --yes dotnet-sdk-2.2 \
     && apt-get install --yes dotnet-sdk-2.1 \
     && apt-get install --yes default-jdk
 
