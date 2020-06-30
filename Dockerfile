@@ -12,7 +12,7 @@ RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor 
 RUN apt-get update \
     && apt-get install apt-transport-https \
     && apt-get update \
-    && apt-get install --yes dotnet-sdk-2.1 \
+#    && apt-get install --yes dotnet-sdk-2.1 \
     && apt-get install --yes default-jdk
 
 # Trying to fix sonarscanner problems
