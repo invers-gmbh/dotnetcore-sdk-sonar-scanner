@@ -4,7 +4,7 @@
 - [`dotnet-2.2` -> .net Core SDK 2.2](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-2.2/Dockerfile)
 - [`dotnet-3.0` -> .net Core SDK 3.0](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.0/Dockerfile)
 - [`dotnet-3.1` -> .net Core SDK 3.1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.1/Dockerfile)
-- [`dotnet-all` -> includes .net Core SDK 3.1, and 2.1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-all/Dockerfile)
+- [`dotnet-all` -> includes the most recent .net core SDKs](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-all/Dockerfile)
 
 
 # What's this image about?
