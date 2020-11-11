@@ -5,6 +5,7 @@
 - [`dotnet-3.0` -> .net Core SDK 3.0](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.0/Dockerfile)
 - [`dotnet-3.1` -> .net Core SDK 3.1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-3.1/Dockerfile)
 - [`dotnet-5rc1` -> .net Core SDK 5rc1](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-5rc1/Dockerfile)
+- [`dotnet-5.0` -> .net Core SDK 5.0](https://github.com/invers-gmbh/dotnetcore-sdk-sonar-scanner/blob/dotnet-5.0/Dockerfile)
 
 # What's this image about?
 
