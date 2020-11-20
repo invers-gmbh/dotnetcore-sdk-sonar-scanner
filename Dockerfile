@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM mcr.microsoft.com/dotnet/sdk:3.1
 
 # Register Microsoft key and product repository
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg \
@@ -8,11 +8,11 @@ RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor 
     && chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg \
     && chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
-# Install apt-transport-https, dotnet-sdk-3.1, Java
+# Install apt-transport-https, dotnet-sdk-2.1, Java
 RUN apt-get update \
     && apt-get install apt-transport-https \
     && apt-get update \
-    && apt-get install --yes dotnet-sdk-3.1 \
+    && apt-get install --yes dotnet-sdk-5.0 \
     && apt-get install --yes default-jdk
 
 # Trying to fix sonarscanner problems
