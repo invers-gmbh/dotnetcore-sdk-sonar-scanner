@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:3.1-alpine
+FROM mcr.microsoft.com/dotnet/sdk:3.1-focal
 
 # Register Microsoft key and product repository
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg \
