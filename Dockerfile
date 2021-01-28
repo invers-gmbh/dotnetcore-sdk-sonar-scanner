@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0.102-ca-patch-buster-slim
 
-# RUN mkdir /usr/share/man/man1/
+RUN mkdir /usr/share/man/man1/
 
 RUN apt-get update
 
