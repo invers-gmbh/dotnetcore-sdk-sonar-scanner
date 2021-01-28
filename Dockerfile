@@ -8,7 +8,16 @@ RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor 
     && chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg \
     && chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
-# Install apt-transport-https, dotnet-sdk-2.1, Java
+# added ca fix (https://github.com/NuGet/Home/issues/10491#issuecomment-768687027)
+ADD http://ftp.us.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20210119_all.deb .
+RUN dpkg -i ca-certificates_20210119_all.deb
+
+RUN apt-get update && apt-get install -y \
+	ca-certificates \
+	&& update-ca-certificates \
+	&& rm -rf /var/lib/apt/lists/*
+
+# Install apt-transport-https, dotnet-sdk-5.0, Java
 RUN apt-get update \
     && apt-get install apt-transport-https \
     && apt-get update \
