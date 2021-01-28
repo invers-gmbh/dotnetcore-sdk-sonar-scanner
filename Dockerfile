@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0-focal
+FROM mcr.microsoft.com/dotnet/sdk:5.0.102-ca-patch-buster-slim
 
 # RUN mkdir /usr/share/man/man1/
 
