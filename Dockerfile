@@ -44,8 +44,10 @@ RUN node -v
 RUN npm -v
  
 # Install semantic-release
-RUN npm install @semantic-release/gitlab @semantic-release/exec @semantic-release/commit-analyzer @semantic-release/release-notes-generator
-RUN npm install semantic-release-monorepo
+RUN npm install semantic-release -g
+RUN npm install @semantic-release/gitlab @semantic-release/exec @semantic-release/commit-analyzer @semantic-release/release-notes-generator -g
+RUN npm install semantic-release-monorepo -g
+RUN npm install semantic-release-slack-bot -g
 
 # Cleanup
 RUN apt-get -q autoremove \
