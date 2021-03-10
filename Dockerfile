@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal
 
+# Show dotnet.core version
+dotnet --version
+
 #  Install Java
 RUN apt-get update \
     && apt-get install --yes default-jdk
